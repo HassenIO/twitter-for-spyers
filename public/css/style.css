@@ -1,0 +1,13 @@
+body {
+  font-size: 0.8em;
+  margin: 0 auto;
+  width: 600px; }
+
+#header {
+  background: #eeeeee;
+  height: 100px; }
+
+#footer {
+  color: #888888;
+  margin-top: 40px;
+  text-align: center; }
