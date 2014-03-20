@@ -7,6 +7,31 @@ body {
   background: #eeeeee;
   height: 100px; }
 
+#tweet-form {
+  margin-top: 20px; }
+  #tweet-form .tweet-form-block {
+    margin-bottom: 20px; }
+    #tweet-form .tweet-form-block input, #tweet-form .tweet-form-block textarea {
+      padding: 10px; }
+    #tweet-form .tweet-form-block .name {
+      width: 450px; }
+    #tweet-form .tweet-form-block .submit {
+      float: right;
+      width: 100px; }
+    #tweet-form .tweet-form-block .message {
+      width: 600px; }
+
+#tweets ul {
+  margin: 0;
+  padding: 0; }
+#tweets li {
+  border-bottom: 1px solid #e0e0e0;
+  list-style-type: none;
+  padding: 20px 0; }
+#tweets .created-at {
+  color: #0090ff;
+  float: right; }
+
 #footer {
   color: #888888;
   margin-top: 40px;

@@ -1,1 +1,27 @@
-Here is the index page
+<form id="tweet-form" action="/" method="post">
+	<div class="tweet-form-block">
+		<input type="text" class="name" name="name"/>
+		<input type="submit" class="submit" value="Envoyer"/>
+	</div>
+	<div class="tweet-form-block">
+		<textarea name="message" class="message"></textarea>
+	</div>
+</form>
+
+<div id="tweets">
+	<% unless @tweets.empty? %>
+		<ul>
+			<% @tweets.each do |tweet| %>
+				<li>
+					<p>
+						<strong><%= tweet.name %></strong>
+						<span class="created-at"><%= tweet.created_at.strftime "%d/%m/%Y" %></span>
+					</p>
+					<p><%= tweet.message %></p>
+				</li>
+			<% end %>
+		</ul>
+	<% else %>
+		<strong>No secret messages yet! Wanna be the first?</strong>
+	<% end %>
+</div>
